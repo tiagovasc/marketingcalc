@@ -79,7 +79,7 @@ function calculate() {
   document.getElementById('addressableClicks').textContent = addressableResults.clicks.toLocaleString();
   
   // Calculate Effectiveness Ratio
-  const effectivenessRatio = addressableResults.cpc / blazeResults.cpc;
+  const effectivenessRatio = blazeResults.cpc / addressableResults.cpc;
   document.getElementById('effectivenessRatio').textContent = effectivenessRatio.toFixed(2);
 
   // Calculate and display the required optimization for Addressable to match Blaze's True CPC for different budgets
